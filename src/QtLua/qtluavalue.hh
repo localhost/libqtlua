@@ -21,6 +21,8 @@
 #ifndef QTLUAVALUE_HH_
 #define QTLUAVALUE_HH_
 
+#include "qtluaglobal.hh"
+
 #include "qtluavaluebase.hh"
 
 namespace QtLua {
@@ -43,7 +45,7 @@ namespace QtLua {
    * @see const_iterator
    */
 
-class Value : public ValueBase
+class QTLUA_LIB_DECL Value : public ValueBase
 {
   friend class State;
   friend class UserData;

@@ -28,6 +28,8 @@
 #include <QPointer>
 #include <QSettings>
 
+#include "qtluaglobal.hh"
+
 #define QTLUA_MAX_COMPLETION 200
 
 namespace QtLua {
@@ -51,7 +53,7 @@ namespace QtLua {
    * @example examples/cpp/console/console.cc:1
    */
 
-class Console : public QTextEdit
+class QTLUA_LIB_DECL Console : public QTextEdit
 {
   Q_OBJECT;
   Q_PROPERTY(int history_size READ get_history_size WRITE set_history_size);
