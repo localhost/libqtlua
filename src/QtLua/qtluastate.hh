@@ -28,6 +28,8 @@
 
 #include <setjmp.h>
 
+#include "qtluaglobal.hh"
+
 #include "qtluastring.hh"
 #include "qtluavalue.hh"
 #include "qtluavalueref.hh"
@@ -84,7 +86,7 @@ namespace QtLua {
    * messages reporting on user console.
    */
 
-class State : public QObject
+class QTLUA_LIB_DECL State : public QObject
 {
   Q_OBJECT
 
