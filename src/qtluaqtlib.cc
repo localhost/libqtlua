@@ -451,7 +451,7 @@ namespace QtLua {
     {
       Value::List meta_call(State *ls, const Value::List &args)
       {
-	QAction *a[args.size()];
+	std::vector<QAction *> a(args.size());
 
 	for (int i = 0; i < args.size(); i++)
 	  a[i] = args[i].to_qobject_cast<QAction>();
