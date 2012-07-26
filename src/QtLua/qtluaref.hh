@@ -22,7 +22,7 @@
 #ifndef QTLUAREF_HH_
 #define QTLUAREF_HH_
 
-#ifndef __GNUC__
+#if !defined(__GNUC__) && !defined(_MSC_VER)
 # warning GCC atomic operations are not available before, QtLua::Ref will not be thread-safe
 #endif
 
